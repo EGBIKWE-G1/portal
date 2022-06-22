@@ -1,0 +1,55 @@
+.right-wrapper {
+  // background-color: #f3f3f3;
+  // height: 100vh;
+}
+.right-dark {
+  background-color: $dark-bg;
+  color: $dark-headings;
+  // height: 100vh;
+}
+.left-wrapper {
+  // background-color: #fff;
+  // height: 100vh;
+}
+.left-dark {
+  // height: 100vh;
+  background-color: $dark-bg;
+  color: $dark-headings;
+}
+
+.phone-slider {
+  img {
+    max-width: 18rem;
+    max-height: 26rem;
+    // @media only screen and (min-width: 940px) {
+    //   width: 32vw;
+    // }
+    // @media only screen and (min-width: 1024px) {
+    //   max-width: 10rem;
+    // }
+    // @media only screen and (min-width: 1540px) {
+    //   width: 20vw;
+    // }
+  }
+  video {
+    max-width: 9rem;
+    // max-height: 13rem;
+    left: 4.2rem;
+    top: -0.5rem;
+    // @media only screen and (min-width: 940px) {
+    //   width: 16vw;
+    //   left: 5.5rem;
+    //   top: 1rem;
+    // }
+    // @media only screen and (min-width: 1024px) {
+    //   max-width: 7rem;
+    //   left: 6.5rem;
+    //   top: 1rem;
+    // }
+    // @media only screen and (min-width: 1540px) {
+    //   width: 11vw;
+    //   left: 5.5rem;
+    //   top: -1rem;
+    // }
+  }
+}

@@ -1,0 +1,37 @@
+.main-vertical {
+  position: relative;
+}
+
+.woo {
+  position: fixed;
+  top: 35%;
+  left: 22%;
+}
+.verticals {
+  position: relative;
+  //   width: 80%;
+  &-image1 {
+    transform: translate(-90%, -170%);
+  }
+  &-image2 {
+    transform: translate(0%, -360%);
+  }
+  &-image3 {
+    transform: translate(100%, -580%);
+  }
+  &-image4 {
+    transform: translate(100%, -420%);
+  }
+  &-image5 {
+    transform: translate(100%, -540%);
+  }
+  &-image6 {
+    transform: translate(35%, -550%);
+  }
+  &-image7 {
+    transform: translate(-65%, -520%);
+  }
+  &-image8 {
+    transform: translate(-125%, -640%);
+  }
+}

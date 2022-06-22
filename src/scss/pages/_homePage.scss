@@ -1,0 +1,170 @@
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-home {
+  display: grid;
+  height: 100vh;
+  // grid-template-rows: auto auto auto 1fr auto;
+  // overflow: hidden;
+  background: rgba(229, 229, 229, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  // background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  width: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  // .stories {
+  //   display: none;
+  // }
+  .main-home {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto auto auto auto 1fr;
+    grid-template-areas: "headerSection" "minheader" "userstory" "navigation" "verticals" "bodySection";
+  }
+  .header {
+    grid-area: headerSection;
+  }
+  .min-header {
+    grid-area: minheader;
+  }
+  .Navigation {
+    grid-area: navigation;
+  }
+  .categories {
+    grid-area: verticals;
+  }
+  .stories {
+    grid-area: userstory;
+  }
+  .body {
+    grid-area: bodySection;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 12px;
+  }
+  .pay-action {
+    font-size: 11px !important;
+  }
+  .bg-action {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1200px) {
+  .main-home {
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
+  }
+  .min-header {
+    grid-column: 1 / span 12;
+  }
+  .header {
+    grid-column: 1 / span 12;
+  }
+
+  .body {
+    grid-column: 4 / span 6;
+    // border-right: 2px solid #afafaf;
+    overflow-y: auto;
+  }
+  .categories {
+    grid-column: 1 / span 3;
+  }
+  .stories {
+    grid-column: 10 / span 3;
+    overflow: hidden;
+  }
+  .Navigation {
+    display: none;
+  }
+  .pay-bills_action {
+    background: radial-gradient(
+      123.39% 164.51% at 27.81% 55.33%,
+      #2573ba 0%,
+      #041860 100%
+    );
+    &-img {
+      &__arrow {
+        opacity: 0;
+        transition: opacity 0.25s;
+        cursor: pointer;
+      }
+    }
+  }
+  .pay-bills_action-img__arrow:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 14px;
+  }
+}
+.sc-mchild {
+  flex: 0 0 150px;
+}
+.sc-child {
+  flex: 0 0 215px;
+}
+.sc-children {
+  flex: 0 0 110px;
+}
+
+.m-image__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 10%;
+  width: 100%;
+  color: white;
+  transform: translateY(-28px);
+  opacity: 0;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.m-image__overlay:hover {
+  opacity: 1;
+}
+
+// .pay-bills_action {
+//   background: radial-gradient(
+//     123.39% 164.51% at 27.81% 55.33%,
+//     #2573ba 0%,
+//     #041860 100%
+//   );
+//   &-img {
+//     &__arrow {
+//       opacity: 0;
+//       transition: opacity 0.25s;
+//       cursor: pointer;
+//     }
+//   }
+// }
+// .pay-bills_action-img__arrow:hover {
+//   opacity: 1;
+//   cursor: pointer;
+// }
+
+.challenges-hashtags:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2.66px;
+  width: 13rem;
+}

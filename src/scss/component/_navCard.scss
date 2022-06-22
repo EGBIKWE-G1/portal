@@ -1,0 +1,123 @@
+.Navcard-container {
+  background-color: #fff;
+  width: 384px;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
+  z-index: 9;
+  position: absolute;
+  top: 71px;
+  display: block;
+  right: 0;
+  white-space: nowrap;
+  color: #000;
+  transition: all 0.9s ease-in-out;
+}
+
+.Navcard-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    img {
+      border-radius: 50px;
+    }
+    &-name {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  &__balance {
+    background-color: #043f7c;
+    padding: 0.4rem;
+    border-radius: 0px 8px 8px 0px;
+    color: white;
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.Navcard-cards {
+  &__collapsible {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  &__allCards {
+    margin-top: -10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    overflow-x: auto;
+    cursor: pointer;
+  }
+}
+
+.sc {
+  flex: 0 0 110px;
+}
+
+.Navcard-verticals {
+  height: 100px;
+  margin-top: 20px;
+  overflow-y: auto;
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.Navcard-section {
+  display: flex;
+  justify-content: space-between;
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.finger {
+  cursor: pointer;
+}
+
+.navcard::-webkit-scrollbar {
+  width: 0;
+}
+
+.navcard::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.navcard::-webkit-scrollbar-thumb {
+  background: transparent;
+  width: 0;
+}
+
+.open-card {
+  transform: rotate(180deg);
+  margin-top: 20px;
+}
+
+.woozee-care {
+  background-color: rgb(219, 48, 36);
+}
+
+.care-balance {
+  background-color: rgb(65, 65, 66);
+}

@@ -1,0 +1,80 @@
+.form {
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  padding: 1.3em 1.2em;
+  border-radius: 5px;
+  // font-family: $main-font;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  border: 1.1339px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  position: relative;
+  height: 3.55rem;
+}
+.select__input {
+  width: 100%;
+  padding-left: 1.3em;
+  border-radius: 5px;
+  // font-family: $main-font;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  border: 1.1339px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  position: relative;
+  height: 3.55rem;
+}
+.select__input:focus {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.form__input:focus {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+// label {
+//   position: absolute;
+//   left: 20px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   font-size: 15px;
+//   transition: all 0.3s ease;
+//   color: #000;
+//   cursor: text;
+//   background-color: #ffff;
+//   padding: 0 0.4em;
+// }
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: 0;
+  left: 25px;
+  color: #000;
+}
+.select__input:focus ~ .form__label,
+.select__input:not(:placeholder-shown).select__input:not(:focus)
+  ~ .form__label {
+  top: 0;
+  left: 25px;
+  color: #000;
+}
+input:focus + label {
+  color: black;
+}
+// span {
+//   padding: 5px;
+//   background-color: #ffff;
+//   border-radius: 1000px;
+// }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

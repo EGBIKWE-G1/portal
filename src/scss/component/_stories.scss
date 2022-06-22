@@ -1,0 +1,178 @@
+.user {
+  transform: translateY(-33px);
+  position: fixed;
+  // position: absolute;
+  width: 20rem;
+  //   height: 655px;
+  // top: 6rem;
+  background: #ffffff;
+  // position: relative;
+  // background-color: green;
+  // height: 31rem;
+  /* Card Shadow */
+
+  box-shadow: 6.54397px 6.54397px 6.54397px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 30px 30px;
+  //   transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  @media only screen and (max-device-width: 1024px) {
+    width: 15rem;
+    height: 39rem;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 21.5rem;
+    // height: 37rem;
+  }
+  @media only screen and (min-width: 1740px) {
+    width: 25rem;
+    // height: 43rem;
+  }
+}
+.mb-us {
+  width: 18.5rem;
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 18.5rem !important;
+  }
+  @media only screen and (max-width: 682px) {
+    width: 21.5rem;
+  }
+  @media only screen and (min-width: 720px) {
+    width: 42rem;
+  }
+}
+.userstories {
+  // background: linear-gradient(177deg, #043f7c 10%, #ff5757 100%);
+  // border-radius: 6.57179px;
+  // width: 76.24px;
+  // height: 103.24px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  .img-stories {
+    position: relative;
+    object-fit: cover;
+    border-radius: 6.57179px;
+    height: 190px;
+    width: 105px;
+  }
+  video {
+    position: relative;
+    object-fit: cover;
+    border-radius: 6.57179px;
+    height: 190px;
+    width: 105px;
+  }
+}
+
+.user__details {
+  transform: translateY(-40px);
+  color: white;
+}
+
+///// challenge-mobile
+
+.challenge-scroll {
+  // width: 18.5rem;
+  width: 46.2rem;
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 18rem !important;
+  }
+  @media only screen and (max-width: 682px) {
+    width: 20.5rem;
+  }
+  @media only screen and (min-width: 720px) {
+    width: 42rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.post {
+  width: 23.8rem;
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 18rem !important;
+  }
+  @media only screen and (max-width: 402px) {
+    width: 20.5rem;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 950px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 39.5rem;
+  }
+  @media only screen and (min-width: 1400px) {
+    width: 43.8rem;
+  }
+}
+
+.slick-slide img {
+  width: 98% !important;
+  // margin-right: .5rem;
+}
+
+.sponsor-img_main {
+  width: 90vw;
+  @media only screen and (min-width: 1024px) {
+    width: 31.5rem;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 42.5rem;
+  }
+}
+.slick-track {
+  height: 6rem;
+  @media only screen and (min-width: 1024px) {
+    height: 14rem;
+  }
+}
+
+// .movie-scroll{
+//   width:46rem;
+//   @media only screen and (min-width: 1024px) {
+//     width: 100%;
+//   }
+// }
+
+.overlay-stories {
+  height: 190px;
+  width: 105px;
+  position: relative;
+}
+
+.overlay-stories .text {
+  background-color: rgba(0, 0, 0, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6.57179px;
+  color: white;
+}
+
+.img-border {
+  background: linear-gradient(177deg, #043f7c 10%, #ff5757 100%);
+  border-radius: 50px;
+  width: 36.24px;
+  height: 36.24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    background-position: center center;
+  }
+}

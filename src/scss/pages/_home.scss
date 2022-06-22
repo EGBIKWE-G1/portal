@@ -1,0 +1,40 @@
+.web-view {
+  display: none;
+  @media screen and (min-width: 1108px) {
+    display: block;
+  }
+}
+.home-container {
+  display: none;
+  @media screen and (min-width: 1124px) {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(180deg, #e5e5e5 50%, #ffff 50%);
+    background-size: cover;
+    background-position: 100%;
+    gap: 3px;
+  }
+}
+.home_dark {
+  background-color: $dark-bg;
+  color: $dark-headings;
+  // overflow: hidden;
+  height: 100vh;
+  display: none;
+  @media screen and (min-width: 1108px) {
+    display: grid;
+    // overflow: hidden;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: $dark-bg;
+    color: $dark-headings;
+  }
+}
+
+.body-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}

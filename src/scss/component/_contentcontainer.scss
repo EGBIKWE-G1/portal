@@ -1,0 +1,40 @@
+.content {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr 1fr auto auto;
+  height: 100vh;
+  grid-auto-columns: 1fr;
+  gap: 5px;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow-x: scroll !important;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
+// .challenge-container_img {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 284.08px;
+//     height: 504.29px;
+//     left: 1329px;
+//     top: 1150px;
+//     background: #aa6666;
+//     opacity: 0.1;
+//   }
+// }
+// body::-webkit-scrollbar-thumb {
+//   background-color: rgb(197, 90, 122);
+//   /* background-color: hsl(186, 52%, 78%); */
+//   border-radius: 6px;
+//   border: 0;
+// }
+// body::-webkit-scrollbar-track {
+//   background-color: hsl(0, 0%, 25%);
+// }
+
+.c {
+  border: 2px solid black;
+}

@@ -1,0 +1,240 @@
+.inputcard {
+  background-color: #f3f3f3;
+  border-radius: 38.0223px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #cecece;
+}
+.inputcard-dark {
+  background-color: $dark-bg;
+  color: $dark-headings;
+  border: 1px solid $dark-border;
+  border-radius: 38.0223px;
+  padding: 2rem 1.5rem;
+}
+
+.btn-login {
+  background-color: $btn-color;
+  border-radius: 7.7454px;
+  padding: 1rem 0;
+  @media only screen and (min-width: 1024px) {
+    padding: 0.6rem 0;
+  }
+}
+// .MuiInputLabel-outlined {
+//   z-index: 1;
+//   transform: translate(14px, 20px) scale(1)!important;
+//   pointer-events: none;
+// }
+.MuiOutlinedInput-notchedOutline {
+  border-color: #6d6d6d !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(41, 41, 41, 0.4) !important;
+  border-width: 2px;
+}
+.MuiInputBase-root {
+  color: #6d6d6d !important;
+  font-size: 0.8rem !important;
+}
+.MuiInputBase-input {
+  font-family: google-sansRegular !important;
+  color: #6d6d6d !important;
+  padding: 15px 13px !important;
+}
+.MuiIconButton-root {
+  color: #6d6d6d !important;
+}
+.MuiFormLabel-root {
+  font-family: google-sansRegular !important;
+  color: #6d6d6d !important;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid transparent;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #494949;
+}
+
+.searchTerm:focus {
+  color: #494949;
+}
+
+.searchButton {
+  width: 40px;
+  // height: 36px;
+  border: 1px solid transparent;
+  background: #ffff;
+  text-align: center;
+  color: #494949;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 940px) {
+  .landing-caption {
+    h3 {
+      font-size: 23px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .landing-caption {
+    h3 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 25px;
+    }
+  }
+  // .landing-img {
+  //   width: 9vw;
+  // }
+}
+
+.big_circle {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  // background-color: blue;
+  // background-image: url('../woo.svg');
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -5em;
+  margin-top: -5em;
+}
+
+.little_circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 30%;
+  background-color: green;
+  position: relative;
+  animation: spin 10s infinite linear;
+  transform: rotate(180deg);
+}
+
+.verticals {
+  animation: spin 5s infinite linear;
+  transform: rotate(180);
+}
+
+#little_one {
+  bottom: 4em;
+  right: 3em;
+  animation: move 10s linear;
+  transform: rotate(180);
+}
+
+#little_two {
+  bottom: 8.5em;
+  left: 3.5em;
+}
+
+#little_three {
+  bottom: 9em;
+  left: 10em;
+}
+#little_four {
+  bottom: 7.5em;
+  left: 13em;
+}
+#little_five {
+  bottom: 4.8em;
+  left: 12em;
+}
+#little_six {
+  bottom: 2.8em;
+  left: 6em;
+}
+#little_seven {
+  bottom: 7em;
+  left: -1em;
+}
+#little_eight {
+  bottom: 13.8em;
+  left: -6em;
+}
+#little_nine {
+  bottom: 21.8em;
+  left: -6em;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    bottom: 8.5em;
+    left: 3.5em;
+  }
+}
+
+#cf {
+  position: relative;
+  margin: 8rem auto 0 auto;
+}
+// #cf img {
+//   position: absolute;
+//   -webkit-transition: opacity 1s ease-in-out;
+//   -moz-transition: opacity 1s ease-in-out;
+//   -o-transition: opacity 1s ease-in-out;
+//   transition: opacity 1s ease-in-out;
+// }
+// #cf .phone-slider {
+//   position: absolute;
+//   -webkit-transition: opacity 1s ease-in-out;
+//   -moz-transition: opacity 1s ease-in-out;
+//   -o-transition: opacity 1s ease-in-out;
+//   transition: opacity 1s ease-in-out;
+// }
+
+// .phone-slider {
+//   animation: CF3FadeInOut 10s ease-in-out infinite alternate;
+// }
+
+@keyframes CF3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

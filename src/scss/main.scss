@@ -1,0 +1,29 @@
+// import abstracts
+@import "./abstract/variables";
+
+// import  base
+@import "./base/base";
+@import "./base/typography";
+
+// import  layout
+@import "./layout/content";
+
+// import  components
+@import "./component/inputContainer";
+@import "./component/verticals";
+@import "./component/vertical";
+@import "./component/mobile";
+@import "./component/header";
+@import "./component/contentcontainer";
+@import "./component/clicknshop";
+@import "./component/stories";
+@import "./component/userdetails";
+@import "./component/feeds";
+@import "./component/movies";
+@import "./component/input";
+@import "./component/navbar";
+@import "./component/navCard";
+
+// import  components
+@import "./pages/home";
+@import "./pages/homePage";
